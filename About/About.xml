@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>ET Homunculus(Continued)</name>
+  <author>moyuguguji</author>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <packageId>moyuguguji.homunculus</packageId>
+  <description>
+    ET Homunculus 模组的个人移植1.6版本
+    Personal port of ET Homunculus mod to version 1.6
+    https://steamcommunity.com/sharedfiles/filedetails/?id=3128090301
+
+    这个MOD是Humanoid Dryad的扩展内容
+    This MOD is an expansion content for "Humanoid Dryad"
+
+      == 注意 ==
+    == CAUTION ==
+    相对于原版,此版本去除了Animal Gear相关内容,原版的武器,衣服等物品全部改成了植入物,并且删除了部分物品
+    想体验原版内容可以使用这个[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3247494233]mod[/url]使原版可以在1.6版本上运行
+    Compared to the original, this version removes Animal Gear content. Weapons, clothing etc. have been converted to implants, and some items have been removed.
+    To experience the original content, use this [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3247494233]mod[/url] to run the original on 1.6.
+
+    需要前置MOD："Vanilla Expanded Framework" "Humanoid Dryad"
+    This MOD requires："Vanilla Expanded Framework" "Humanoid Dryad"
+
+    新增动物：
+    add Animal:
+    仙女（Nymph）
+    全能型,由树精原型基因重建而成。
+    Nymph
+    All-rounder Type
+    reconstructed from the Dryad archetype gene.
+
+    山灵（Oread）
+    防御型,定期生成矿物。
+    Oread
+    Defender Type
+    generates minerals at regular intervals.
+
+    水灵（Naiad）
+    远程型，自带治愈能力和远程攻击
+    Naiad
+    Long range attacker type, with innate healing and liquid ether production.
+
+    [h1]Language:[/h1]
+    English (AI translation)
+    Japanese
+    [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3128624725]ChineseSimplified[/url]
+
+    CE兼容:
+    无适配计划。
+    CE Compatible:
+    There are no plans to respond.
+
+    修改与上传:
+    自由修改与分发！
+    Modification upload:
+    free to modify and enjoy!
+  </description>
+
+  <modDependencies>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+      <downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>moyuguguji.humanoiddryad</li>
+  </loadAfter>
+</ModMetaData>

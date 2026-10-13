@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== 治愈 ==================== -->
+  <!-- 效果等同于治愈机械液 / 水灵自带 / 贴近使用 冷却1天 -->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>HO_Heal</defName>
+    <label>heal</label>
+    <description>Heal a permanent injury or restore a missing body part.</description>
+    <iconPath>Things/Pawn/Animal/Apparel/HO_Ex_module</iconPath>
+    <hostile>false</hostile>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <warmupTime>2</warmupTime>
+      <range>-1</range>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_AbilityHeal" />
+    </comps>
+  </AbilityDef>
+
+  <!-- ==================== 跳跃 ==================== -->
+  <!-- 范围:28 / 预热:1.2s / CT.Jump植入物授予 -->
+  <AbilityDef>
+    <defName>HO_Jump</defName>
+    <label>jump</label>
+    <description>Jump to a target location within range.</description>
+    <iconPath>Things/Projectile/ETR2</iconPath>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.2</warmupTime>    <!-- 预热 -->
+      <range>28</range>                 <!-- 射程 -->
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_AbilityJump">
+        <range>28</range>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- ==================== ET.Pulse | EMP脉冲 ==================== -->
+  <!-- 范围:29.9 / 预热:0.6s / CD:2000(33s) / 弹丸:Bullet_ET_Pulse(EMP半径3.4) / Nymph+Naiad -->
+  <AbilityDef>
+    <defName>ET_Bolt</defName>
+    <label>ET.Pulse</label>
+    <description>Fire an EMP pulse that stuns mechanoids.</description>
+    <iconPath>Things/Projectile/ET_Bolt</iconPath>
+    <cooldownTicksRange>1800</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.6</warmupTime>
+      <range>29.9</range>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_LaunchProjectile">
+        <projectileDef>Bullet_ET_Pulse</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- ==================== ET.Impact | 冲击 ==================== -->
+  <!-- 范围:69.9(最小18.9) / 预热:4s / CD:5000(83s) / 弹丸:Bullet_ETImpact(爆炸伤64半径10.9) / Nymph+Oread -->
+  <AbilityDef>
+    <defName>ET_Impact</defName>
+    <cooldownTicksRange>5000</cooldownTicksRange>
+    <label>ET.Impact</label>
+    <description>Long range ballistic bombing.</description>
+    <iconPath>Things/Projectile/ETR</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>4</warmupTime>
+      <range>69.9</range>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_LaunchProjectile">
+        <projectileDef>Bullet_ETImpact</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- ==================== ET.Launcher | 发射器 ==================== -->
+  <!-- 范围:88.9(最小18.9) / 预热:4s / CD:5000(83s) / 弹丸:Bullet_ETRocket(爆炸半径3.4) / Oread -->
+  <AbilityDef>
+    <defName>ET_Launcher</defName>
+    <cooldownTicksRange>1800</cooldownTicksRange>
+    <label>ET.Launcher</label>
+    <description>Long range ballistic bombing.</description>
+    <iconPath>Things/Projectile/ETR2</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2</warmupTime>
+      <range>88.9</range>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_LaunchProjectile">
+        <projectileDef>Bullet_ETRocket</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- ==================== D-Lancet | 柳叶刀 ==================== -->
+  <!-- 范围:28.9 / 预热:3.8s / CD:1200(20s) / 弹丸:DLancet_Thrown(刺伤34穿1) / Dryad全家 -->
+  <AbilityDef>
+    <defName>D_Lancet</defName>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <label>D-Lancet</label>
+    <description>Ranged attack.</description>
+    <iconPath>Things/Projectile/D_lancet</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.2</warmupTime>
+      <range>28.9</range>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_LaunchProjectile">
+        <projectileDef>DLancet_Thrown</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- ==================== D-Missile | 导弹 ==================== -->
+  <!-- 范围:38.9(最小10.9) / 预热:2s / CD:5000(83s) / 弹丸:D_wood(爆炸伤16半径2) / Dryad全家 -->
+  <AbilityDef>
+    <defName>D_Missile</defName>
+    <cooldownTicksRange>900</cooldownTicksRange>
+    <label>D-Missile</label>
+    <description>Explosive ranged attack.</description>
+    <iconPath>Things/Projectile/D_wood</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2</warmupTime>
+      <range>38.9</range>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_LaunchProjectile">
+        <projectileDef>D_wood</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- ==================== D-Canon | 加农炮 ==================== -->
+  <!-- 范围:40.9(最小10.9) / 预热:2s / CD:5000(83s) / 弹丸:D_Rock(爆炸伤50半径3.4) / Dryad全家 -->
+  <AbilityDef>
+    <defName>D_Canon</defName>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <label>D-Canon</label>
+    <description>Explosive ranged attack.</description>
+    <iconPath>Things/Projectile/D_Rock</iconPath>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2</warmupTime>
+      <range>40.9</range>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="ET_Homunculus.CompProperties_LaunchProjectile">
+        <projectileDef>D_Rock</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

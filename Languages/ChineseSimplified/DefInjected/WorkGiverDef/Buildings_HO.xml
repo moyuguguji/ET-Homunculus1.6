@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 工作执行者定义 -->
+<LanguageData>
+  <!-- EN: ET.Manipulat -->
+  <DoBillsET_Manipulator.label>ET.操纵器</DoBillsET_Manipulator.label>
+  <!-- EN: make -->
+  <DoBillsET_Manipulator.verb>制作</DoBillsET_Manipulator.verb>
+  <!-- EN: making -->
+  <DoBillsET_Manipulator.gerund>制作</DoBillsET_Manipulator.gerund>
+</LanguageData>

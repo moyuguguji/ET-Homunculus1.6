@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- HediffDef -->
+<LanguageData>
+  <!-- EN: ET.Regen -->
+  <ETregen.label>ET.再生</ETregen.label>
+  <!-- EN: a ET.regen -->
+  <ETregen.labelNoun>一次ET.再生</ETregen.labelNoun>
+  <!-- EN: Gradually recover damage. -->
+  <ETregen.description>逐渐治愈伤害</ETregen.description>
+</LanguageData>

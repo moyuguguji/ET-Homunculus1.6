@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- PawnKindDef -->
+<LanguageData>
+  <!-- EN: nymph -->
+  <Nymph.label>仙女</Nymph.label>
+  <!-- EN: oread -->
+  <Oread.label>山灵</Oread.label>
+  <!-- EN: naiad -->
+  <Naiad.label>水灵</Naiad.label>
+  <!-- EN: Nerco -->
+  <Nerco.label>尸妖</Nerco.label>
+</LanguageData>

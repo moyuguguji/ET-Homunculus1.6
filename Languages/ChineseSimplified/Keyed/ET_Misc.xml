@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ET_NoHediffDefined>没有定义的Hediff。</ET_NoHediffDefined>
+  <ET_NoHealthTracker>目标没有健康追踪器。</ET_NoHealthTracker>
+  <ET_AlreadyInstalled>已安装过此模块。</ET_AlreadyInstalled>
+  <ET_IncompatibleRace>无法使用：种族不兼容。</ET_IncompatibleRace>
+  <ET_HigherTierInstalled>无法安装：已存在更高级的模块。</ET_HigherTierInstalled>
+  <ET_OvulateIn>排卵倒计时: </ET_OvulateIn>
+  <Nymph.comps.CompAsexualReproduction.customString>排卵: </Nymph.comps.CompAsexualReproduction.customString>
+  <ET_ModeSwitch>射击模式已切换至{0}</ET_ModeSwitch>
+</LanguageData>

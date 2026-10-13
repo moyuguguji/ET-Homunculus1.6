@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- HediffDef -->
+<LanguageData>
+  <!-- EN: self-repair -->
+  <AutoResurrect.label>自我修复</AutoResurrect.label>
+  <AutoResurrect.description>该生物体内注入了自我修复纳米机械。</AutoResurrect.description>
+</LanguageData>

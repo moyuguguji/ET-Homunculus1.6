@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== CT Modules | 通用插件 ==================== -->
+
+  <!-- 钝器+0.20 / 利器+0.20 / 热能+0.20 -->
+  <HediffDef>
+    <defName>HO_CT_Protect</defName>
+    <label>CT.Protect</label>
+    <labelNoun>a CT.Protect implant</labelNoun>
+    <description>An installed CT.Protect module.\n\nEffects:\n  Blunt armor +20%\n  Sharp armor +20%\n  Heat armor +20%</description>
+    <defaultLabelColor>(120,180,200)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.20</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </stages>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- 移速+2.0 c/s -->
+  <HediffDef>
+    <defName>HO_CT_Haste</defName>
+    <label>CT.Haste</label>
+    <labelNoun>a CT.Haste implant</labelNoun>
+    <description>An installed CT.Haste module.\n\nEffects:\n  Move speed +2.0 c/s</description>
+    <defaultLabelColor>(120,180,200)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>2</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- 射击精度+20 / 近战命中+0.75 / 近战闪避+0.50 -->
+  <HediffDef>
+    <defName>HO_CT_Maneuver</defName>
+    <label>CT.Maneuver</label>
+    <labelNoun>a CT.Maneuver implant</labelNoun>
+    <description>An installed CT.Maneuver module.\n\nEffects:\n  Shooting accuracy +20%\n  Melee hit chance +75%\n  Melee dodge chance +50%</description>
+    <defaultLabelColor>(120,180,200)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
+          <MeleeHitChance>0.75</MeleeHitChance>
+          <MeleeDodgeChance>0.50</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- ==================== ET Module | 扩展插件 ==================== -->
+
+  <!-- 钝+0.25 利+0.25 热+0.10 速+0.5 命+0.15 闪+0.10 / 再生:50/天 / Nymph可用 -->
+  <HediffDef>
+    <defName>HO_ET_Regen</defName>
+    <label>ET.Regen</label>
+    <labelNoun>an ET.Regen implant</labelNoun>
+    <description>An installed ET.Regen module.\n\nEffects:\n  Blunt armor +25%\n  Sharp armor +25%\n  Heat armor +10%\n  Move speed +0.5 c/s\n  Melee hit chance +15%\n  Melee dodge chance +10%\n  Auto-regeneration (every 20 ticks)</description>
+    <defaultLabelColor>(160,200,180)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.10</ArmorRating_Heat>
+          <MoveSpeed>0.5</MoveSpeed>
+          <MeleeHitChance>0.15</MeleeHitChance>
+          <MeleeDodgeChance>0.10</MeleeDodgeChance>
+        </statOffsets>
+        <regeneration>200</regeneration>   <!-- 每天恢复200点伤害(Anomaly原版再生) -->
+      </li>
+    </stages>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- ==================== AT Modules | 装甲层 ==================== -->
+
+  <!-- Lv1: 钝+0.10 利+0.10 / 贴图:HO_BaseArmor / 被Armor和ArmorII封锁 -->
+  <HediffDef>
+    <defName>HO_AT_Frame</defName>
+    <label>AT.Frame</label>
+    <labelNoun>an AT.Frame implant</labelNoun>
+    <description>An installed AT.Frame.\n\nEffects:\n  Blunt armor +10%\n  Sharp armor +10%</description>
+    <defaultLabelColor>(150,150,170)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_Overlay">
+        <texPath>Things/Pawn/Animal/Apparel/HO_BaseArmor/HObasearmor</texPath>
+        <drawSize>1.2</drawSize>
+      </li>
+    </comps>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- Lv2: 钝+0.25 利+0.25 热+0.50 / 贴图:HO_Armor / 替换Frame / 被ArmorII封锁 -->
+  <HediffDef>
+    <defName>HO_AT_Armor</defName>
+    <label>AT.Armor</label>
+    <labelNoun>an AT.Armor implant</labelNoun>
+    <description>An installed AT.Armor.\n\nEffects:\n  Blunt armor +25%\n  Sharp armor +25%\n  Heat armor +50%</description>
+    <defaultLabelColor>(150,150,170)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_Overlay">
+        <texPath>Things/Pawn/Animal/Apparel/HO_Armor/HOarmor</texPath>
+        <drawSize>1.2</drawSize>
+      </li>
+    </comps>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- Lv3: 钝+0.65 利+0.65 热+1.20 / 贴图:HO_ArmorAD / 替换Frame+Armor / 最高级 -->
+  <HediffDef>
+    <defName>HO_AT_ArmorAD</defName>
+    <label>AT.Armor II</label>
+    <labelNoun>an AT.Armor II implant</labelNoun>
+    <description>An installed AT.Armor II.\n\nEffects:\n  Blunt armor +65%\n  Sharp armor +65%\n  Heat armor +120%</description>
+    <defaultLabelColor>(150,150,170)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+          <ArmorRating_Heat>1.20</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_Overlay">
+        <texPath>Things/Pawn/Animal/Apparel/HO_ArmorAD/HOarmorAD</texPath>
+        <drawSize>1.2</drawSize>
+      </li>
+    </comps>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- ==================== D Modules | 树精插件 ==================== -->
+
+  <!-- Lv1: 钝+0.10 利+0.10 速+1 / 被D-PRO封锁 -->
+  <HediffDef>
+    <defName>HO_D_Basic</defName>
+    <label>D-Basic</label>
+    <labelNoun>a D-Basic implant</labelNoun>
+    <description>Installed D-Basic module.\n\nEffects:\n  Blunt armor +10%\n  Sharp armor +10%\n  Move speed +1.0 c/s</description>
+    <defaultLabelColor>(140,160,140)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <MoveSpeed>1</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- Lv2: 钝+0.30 利+0.30 速+1.5 命+0.25 闪+0.20 / 替换D-Basic / 最高级 -->
+  <HediffDef>
+    <defName>HO_D_PRO</defName>
+    <label>D-PRO</label>
+    <labelNoun>a D-PRO implant</labelNoun>
+    <description>Installed D-PRO module.\n\nEffects:\n  Blunt armor +30%\n  Sharp armor +30%\n  Move speed +1.5 c/s\n  Melee hit chance +25%\n  Melee dodge chance +20%</description>
+    <defaultLabelColor>(140,160,140)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+          <MoveSpeed>1.5</MoveSpeed>
+          <MeleeHitChance>0.25</MeleeHitChance>
+          <MeleeDodgeChance>0.20</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- ==================== CT Ability | 能力插件 ==================== -->
+
+  <!-- 授予能力:HO_Jump / 跳跃距离+28 -->
+  <HediffDef>
+    <defName>HO_CT_Jump</defName>
+    <label>CT.Jump</label>
+    <labelNoun>a CT.Jump implant</labelNoun>
+    <description>Installed CT.Jump module.\n\nAbility: Jump</description>
+    <defaultLabelColor>(120,180,200)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <JumpRange>28</JumpRange>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs>
+          <li>HO_Jump</li>
+        </abilityDefs>
+      </li>
+    </comps>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- 合一 | 钝+0.30 利+0.30 热+0.30 速+3 射+30 命+112% 闪+75% / 跳跃 / 替换Protect+Haste+Maneuver+Jump / 最高级 -->
+  <HediffDef>
+    <defName>HO_CT_Unity</defName>
+    <label>CT.Unity</label>
+    <labelNoun>a CT.Unity implant</labelNoun>
+    <description>Installed CT.Unity module.\n\nEffects:\n  Blunt armor +15%\n  Sharp armor +15%\n  Heat armor +10%\n  Move speed +1.5 c/s\n  Shooting accuracy +18\n  Melee hit chance +65%\n  Melee dodge chance +45%\n\nAbility: Jump</description>
+    <defaultLabelColor>(120,180,200)</defaultLabelColor>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <statOffsets>
+          <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.30</ArmorRating_Heat>
+          <MoveSpeed>3</MoveSpeed>
+          <ShootingAccuracyPawn>30</ShootingAccuracyPawn>
+          <MeleeHitChance>1.12</MeleeHitChance>
+          <MeleeDodgeChance>0.75</MeleeDodgeChance>
+          <JumpRange>28</JumpRange>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs>
+          <li>HO_Jump</li>
+        </abilityDefs>
+      </li>
+    </comps>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- ==================== ET Weapon Ability | 武器能力 ==================== -->
+
+  <!-- 授予:ET_Bolt能力 / Nymph+Naiad -->
+  <HediffDef>
+    <defName>HO_ET_Ability_Bolt</defName>
+    <label>ET.Pulse</label>
+    <description>Grants the ET.Pulse EMP ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs><li>ET_Bolt</li></abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- 授予:ET_Impact / Nymph+Oread -->
+  <HediffDef>
+    <defName>HO_ET_Ability_Impact</defName>
+    <label>ET.Impact</label>
+    <description>Grants the ET.Impact ballistic bombing ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs><li>ET_Impact</li></abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- 授予:ET_Launcher / Oread -->
+  <HediffDef>
+    <defName>HO_ET_Ability_Launcher</defName>
+    <label>ET.Launcher</label>
+    <description>Grants the ET.Launcher ballistic bombing ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs><li>ET_Launcher</li></abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- ==================== D Weapon Ability | 树精武器能力 ==================== -->
+
+  <!-- 授予:D_Lancet / Dryad全家 -->
+  <HediffDef>
+    <defName>HO_D_Ability_Lancet</defName>
+    <label>D-Lancet</label>
+    <description>Grants the D-Lancet ranged attack ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs><li>D_Lancet</li></abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- 授予:D_Missile / Dryad全家 -->
+  <HediffDef>
+    <defName>HO_D_Ability_Missile</defName>
+    <label>D-Missile</label>
+    <description>Grants the D-Missile explosive attack ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs><li>D_Missile</li></abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- 授予:D_Canon / Dryad全家 -->
+  <HediffDef>
+    <defName>HO_D_Ability_Canon</defName>
+    <label>D-Canon</label>
+    <description>Grants the D-Canon explosive attack ability.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs><li>D_Canon</li></abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+
+</Defs>

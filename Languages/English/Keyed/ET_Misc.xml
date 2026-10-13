@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ET_NoHediffDefined>No hediff defined.</ET_NoHediffDefined>
+  <ET_NoHealthTracker>Target has no health tracker.</ET_NoHealthTracker>
+  <ET_AlreadyInstalled>Already installed.</ET_AlreadyInstalled>
+  <ET_IncompatibleRace>Cannot use: incompatible race.</ET_IncompatibleRace>
+  <ET_HigherTierInstalled>Cannot install: a higher-tier module is already installed.</ET_HigherTierInstalled>
+  <ET_OvulateIn>Ovulate in: </ET_OvulateIn>
+</LanguageData>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 物品定义 -->
+<LanguageData>
+  <!-- EN: ET.manipulator -->
+  <ET_Manipulator.label>ET.操纵器</ET_Manipulator.label>
+  <!-- EN: A device that manipulates the properties of ET.matter -->
+  <ET_Manipulator.description>一种操控 ET.物质 属性的设备</ET_Manipulator.description>
+</LanguageData>
