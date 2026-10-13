@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- ===== Nymph | 花灵 | 速10 生命2x 护甲0.8 免疫10 | 可挤奶/可征召/无性繁殖 ===== -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Nymph</defName>
+    <label>nymph</label>
+    <description>A mysterious animal reconstructed from the Dryad archetype gene.</description>
+    <descriptionHyperlinks>
+      <ThingDef>NymphMilk</ThingDef>
+      <ThingDef>ET_Embryo</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MoveSpeed>10</MoveSpeed>
+      <MarketValue>2600</MarketValue>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <ImmunityGainSpeed>10</ImmunityGainSpeed>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>0</LeatherAmount>
+      <CarryingCapacity>80</CarryingCapacity>
+      <FilthRate>0</FilthRate>
+      <Wildness>0.10</Wildness>
+    </statBases>
+    <uiIconScale>1.2</uiIconScale>
+    <race>
+      <body>Human</body>
+      <predator>false</predator>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>2</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Human</leatherDef>
+      <petness>0</petness>
+      <trainability>Advanced</trainability>
+      <herdMigrationAllowed>false</herdMigrationAllowed>
+      <!--<hasGenders>false</hasGenders>-->
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <nuzzleMtbHours>8</nuzzleMtbHours>
+      <gestationPeriodDays>0</gestationPeriodDays>
+      <nameOnTameChance>0</nameOnTameChance>
+      <!--<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>-->
+      <canReleaseToWild>false</canReleaseToWild>
+      <hediffGiverSets Inherit="False" />
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>0.1</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>0.1</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>20</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>0.3</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>0.4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>NymphMilk</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>8</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+      <!-- VEF/N-apo -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_ChangeDefIfNotUnique">
+        <defToChangeTo>Nerco</defToChangeTo>
+      </li>
+      <!-- VEF/DiseaseImmunity -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseEventImmunity"></li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseImmunity">
+        <hediffsToRemove>
+          <li>Animal_Plague</li>
+          <li>Animal_Flu</li>
+          <li>AB_AnimalSporesAllergy</li>
+        </hediffsToRemove>
+        <tickInterval>2000</tickInterval>
+      </li>
+      <!-- VEF/FixedGender -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
+        <gender>Female</gender>
+      </li>
+      <!-- VEF/LastStand -->
+        <li Class="VEF.AnimalBehaviours.CompProperties_LastStand">
+          <finalCoolDownMultiplier>6</finalCoolDownMultiplier>
+        </li>
+      <!-- VEF/NoFilth -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_NoFilth"></li>
+      <!-- VEF/Draftable -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
+        <makeNonFleeingToo>true</makeNonFleeingToo>
+      </li>
+      <!-- VEF/NoTamingDecay(?) -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_NoTamingDecay"></li>
+      <!-- VE/AsexualReproduction -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_AsexualReproduction">
+        <reproductionIntervalDays>30</reproductionIntervalDays>
+        <customString>ET_OvulateIn</customString>
+        <produceEggs >true</produceEggs >
+        <eggDef>ET_Embryo</eggDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Nymph</defName>
+    <label>nymph</label>
+    <race>Nymph</race>
+    <combatPower>65</combatPower>
+    <canStrip>true</canStrip>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Nymph/Nymph</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.15,0.7,0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+        <butcherBodyPart>
+          <bodyPartGroup>Waist</bodyPartGroup>
+          <thing>ET_Embryo</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- ===== Oread | 山灵 | 速3 生命8x 护甲1.4 自带护盾(HP10000半径3.6) | 可征召 ===== -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Oread</defName>
+    <label>oread</label>
+    <description>A mysterious animal that generates minerals at regular intervals.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ET_i_polymer</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MoveSpeed>3</MoveSpeed>
+      <MarketValue>2800</MarketValue>
+      <ComfyTemperatureMin>-1000</ComfyTemperatureMin>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
+      <ArmorRating_Blunt>1.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+      <ArmorRating_Heat>1.0</ArmorRating_Heat>
+      <ImmunityGainSpeed>10</ImmunityGainSpeed>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <Flammability>0</Flammability>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>0</LeatherAmount>
+      <CarryingCapacity>80</CarryingCapacity>
+      <FilthRate>0</FilthRate>
+      <!-- Shield（Disp） -->
+      <EnergyShieldRechargeRate>6</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+      <Wildness>0.10</Wildness>
+    </statBases>
+    <uiIconScale>1.2</uiIconScale>
+    <race>
+      <body>Human</body>
+      <predator>false</predator>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>8.0</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Human</leatherDef>
+      <petness>0</petness>
+      <trainability>Advanced</trainability>
+      <herdMigrationAllowed>false</herdMigrationAllowed>
+      <!--<hasGenders>false</hasGenders>-->
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <gestationPeriodDays>0</gestationPeriodDays>
+      <nameOnTameChance>0</nameOnTameChance>
+      <!--<giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>-->
+      <canReleaseToWild>false</canReleaseToWild>
+      <hediffGiverSets Inherit="False" />
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseEventImmunity">
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseImmunity">
+        <hediffsToRemove>
+          <li>Animal_Plague</li>
+          <li>Animal_Flu</li>
+          <li>AB_AnimalSporesAllergy</li>
+        </hediffsToRemove>
+        <tickInterval>2000</tickInterval>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
+        <gender>Female</gender>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_NoFilth"></li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
+        <makeNonFleeingToo>true</makeNonFleeingToo>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_NoTamingDecay"></li>
+      <!-- VEF/N-apo -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_ChangeDefIfNotUnique">
+        <defToChangeTo>Nerco</defToChangeTo>
+      </li>
+      <!-- VEF/DigPeriodically -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_DigPeriodically">
+        <customThingToDig>
+          <li>Steel</li>
+          <li>Plasteel</li>
+          <li>ET_i_polymer</li>
+          <li>ET_i_polymer</li>
+        </customThingToDig>
+        <customAmountToDig>
+          <li>10</li>
+          <li>10</li>
+          <li>1</li>
+          <li>1</li>
+        </customAmountToDig>
+        <ticksToDig>60000</ticksToDig>
+      </li>
+      <!-- ProjectileInterceptor -->
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>3.6</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.6, 0.6, 0.8)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <!-- <activeSound>BulletShield_Ambience</activeSound> -->
+        <hitPoints>10000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>false</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>80</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>false</drawWithNoSelection>
+        <disarmedByEmpForTicks>1</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <!-- VEF/Eating -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_AutoNutrition">
+        <tickInterval>2000</tickInterval>
+        <consumingFoodReportString>Eating earth</consumingFoodReportString>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Oread</defName>
+    <label>oread</label>
+    <race>Oread</race>
+    <combatPower>70</combatPower>
+    <canStrip>true</canStrip>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Oread/Oread</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.15,0.7,0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+        <butcherBodyPart>
+          <bodyPartGroup>Waist</bodyPartGroup>
+          <thing>ET_i_polymer</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!-- ===== Naiad | 水灵 | 速3.6 生命1.5x 护甲0.65~0.85 | 可征召/再生 ===== -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Naiad</defName>
+    <label>naiad</label>
+    <description>A mysterious animal that habit of injecting its own secretions liquid into cylinder.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ET_Cylinder</ThingDef>
+      <ThingDef>ET_Liquid_Ether</ThingDef>
+      <ThingDef>ET_Liquid_Ether_DRY</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MoveSpeed>3.6</MoveSpeed>
+      <MarketValue>3200</MarketValue>
+      <ComfyTemperatureMin>-1000</ComfyTemperatureMin>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+      <ArmorRating_Heat>2</ArmorRating_Heat>
+      <ImmunityGainSpeed>10</ImmunityGainSpeed>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <Flammability>0</Flammability>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>0</LeatherAmount>
+      <CarryingCapacity>80</CarryingCapacity>
+      <FilthRate>0</FilthRate>
+      <Wildness>0.10</Wildness>
+    </statBases>
+    <uiIconScale>1.2</uiIconScale>
+    <race>
+      <body>Human</body>
+      <predator>false</predator>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Human</leatherDef>
+      <petness>0</petness>
+      <trainability>Advanced</trainability>
+      <herdMigrationAllowed>false</herdMigrationAllowed>
+      <!--<hasGenders>false</hasGenders>-->
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <gestationPeriodDays>0</gestationPeriodDays>
+      <nameOnTameChance>0</nameOnTameChance>
+      <giveNonToolUserBeatFireVerb>true</giveNonToolUserBeatFireVerb>
+      <canReleaseToWild>false</canReleaseToWild>
+      <hediffGiverSets Inherit="False" />
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <label>ET.Bullet</label>
+        <defaultProjectile>ET_BulletC</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>1.4</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <targetParams><canTargetLocations>true</canTargetLocations><canTargetPawns>true</canTargetPawns></targetParams>
+      </li>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <label>ET.Rifle</label>
+        <defaultProjectile>ET_BulletA</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>2.2</warmupTime>
+        <range>90.9</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>1.25</ticksBetweenBurstShots>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <targetParams><canTargetLocations>true</canTargetLocations><canTargetPawns>true</canTargetPawns></targetParams>
+      </li>
+    </verbs>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <!--
+    <damageMultipliers>
+      <li>
+        <damageDef>Bullet</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+    -->
+    <comps>
+      <li Class="VEF.AnimalBehaviours.CompProperties_ChangeDefIfNotUnique">
+        <defToChangeTo>Nerco</defToChangeTo>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseEventImmunity">
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseImmunity">
+        <hediffsToRemove>
+          <li>Animal_Plague</li>
+          <li>Animal_Flu</li>
+          <li>AB_AnimalSporesAllergy</li>
+        </hediffsToRemove>
+        <tickInterval>2000</tickInterval>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
+        <gender>Female</gender>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_NoFilth"></li>
+      <!-- VEF/NearbyEffecter -->
+      <li Class="CompProperties_Milkable">
+        <milkDef>ET_Liquid_Ether</milkDef>
+        <milkIntervalDays>3</milkIntervalDays>
+        <milkAmount>5</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+      <li Class="CompProperties_Milkable">
+        <milkDef>ET_Liquid_Ether_DRY</milkDef>
+        <milkIntervalDays>5</milkIntervalDays>
+        <milkAmount>2</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
+        <makeNonFleeingToo>true</makeNonFleeingToo>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_NoTamingDecay"></li>
+      <!-- VEF/InitialHediff -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_InitialHediff">
+        <hediffname>AutoResurrect</hediffname>
+        <hediffseverity>1</hediffseverity>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_AutoNutrition">
+        <tickInterval>2000</tickInterval>
+        <consumingFoodReportString>Qualia conversion in progress</consumingFoodReportString>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Naiad</defName>
+    <label>naiad</label>
+    <race>Naiad</race>
+    <combatPower>65</combatPower>
+    <canStrip>true</canStrip>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Naiad/Naiad</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.15,0.7,0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- Hediff/自我修复 | 水灵自带:再生2000 -->
+  <HediffDef>
+    <defName>AutoResurrect</defName>
+    <label>self-repair</label>
+    <description>This creature is infused with self-repairing nanites.</description>
+    <isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <regeneration>2000</regeneration>
+      </li>
+    </stages>
+    <comps>
+      <li Class="ET_Homunculus.HediffCompProperties_GiveAbilityAnimal">
+        <abilityDefs>
+          <li>HO_Heal</li>
+        </abilityDefs>
+      </li>
+    </comps>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <!-- ===== Nerco | 退化体 | 速1 生命0.01x 无护甲 | 繁殖失败产物 ===== -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Nerco</defName>
+    <label>Nerco</label>
+    <description>A homunculus with degenerated traits due to the activation of reproductive control genes.</description>
+    <statBases>
+      <MoveSpeed>1</MoveSpeed>
+      <MarketValue>1</MarketValue>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0</ArmorRating_Sharp>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <ImmunityGainSpeed>10</ImmunityGainSpeed>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>0</LeatherAmount>
+      <CarryingCapacity>80</CarryingCapacity>
+      <FilthRate>0</FilthRate>
+      <Wildness>0.0</Wildness>
+    </statBases>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <baseBodySize>0.32</baseBodySize>
+      <maxPreyBodySize>0.25</maxPreyBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>0.01</baseHealthScale>
+      <foodType>CarnivoreAnimalStrict</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+      <petness>0</petness>
+      <trainability>Intermediate</trainability>
+      <trainableTags>
+        <li>Basic</li>
+        <li>Haul</li>
+      </trainableTags>
+      <untrainableTags>
+        <li>Work</li>
+      </untrainableTags>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <lifeExpectancy>10000</lifeExpectancy>
+      <gestationPeriodDays>0</gestationPeriodDays>
+      <nameOnTameChance>0</nameOnTameChance>
+      <herdMigrationAllowed>false</herdMigrationAllowed>
+      <hasGenders>false</hasGenders>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <canReleaseToWild>false</canReleaseToWild>
+      <hediffGiverSets Inherit="False" />
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Cat_Injured</soundWounded>
+          <soundDeath>Pawn_Cat_Death</soundDeath>
+          <soundCall>Pawn_Cat_Call</soundCall>
+          <soundAngry>Pawn_Cat_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>???</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseEventImmunity"></li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseImmunity">
+        <hediffsToRemove>
+          <li>Animal_Plague</li>
+          <li>Animal_Flu</li>
+          <li>AB_AnimalSporesAllergy</li>
+        </hediffsToRemove>
+        <tickInterval>2000</tickInterval>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_NoFilth"></li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_AutoNutrition">
+        <tickInterval>2000</tickInterval>
+        <consumingFoodReportString>eating myself...</consumingFoodReportString>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Nerco</defName>
+    <label>Nerco</label>
+    <race>Nerco</race>
+    <combatPower>1</combatPower>
+    <canStrip>true</canStrip>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+    <canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Nerco/Nerco</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+</Defs>

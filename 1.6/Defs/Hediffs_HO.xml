@@ -110,12 +110,23 @@
         </statOffsets>
       </li>
     </stages>
-    <comps>
-      <li Class="ET_Homunculus.HediffCompProperties_Overlay">
+    <!--
+      Cosmetic armour overlay (1.7): HediffDef-driven render node. RimWorld creates the
+      node for every pawn carrying this hediff, so no PawnRenderTreeDef patch is needed.
+      The node resolves the real texture as "<texPath>_<pawn.def.defName>" and is
+      toggled per layer / per race from the mod settings ("hidden clothing").
+    -->
+    <renderNodeProperties>
+      <li>
+        <debugLabel>HO AT.Frame overlay</debugLabel>
+        <nodeClass>ET_Homunculus.PawnRenderNode_HomunculusOverlay</nodeClass>
+        <parentTagDef>Body</parentTagDef>
         <texPath>Things/Pawn/Animal/Apparel/HO_BaseArmor/HObasearmor</texPath>
         <drawSize>1.2</drawSize>
+        <baseLayer>7</baseLayer>
+        <pawnType>Any</pawnType>
       </li>
-    </comps>
+    </renderNodeProperties>
     <scenarioCanAdd>false</scenarioCanAdd>
   </HediffDef>
 
@@ -137,12 +148,17 @@
         </statOffsets>
       </li>
     </stages>
-    <comps>
-      <li Class="ET_Homunculus.HediffCompProperties_Overlay">
+    <renderNodeProperties>
+      <li>
+        <debugLabel>HO AT.Armor overlay</debugLabel>
+        <nodeClass>ET_Homunculus.PawnRenderNode_HomunculusOverlay</nodeClass>
+        <parentTagDef>Body</parentTagDef>
         <texPath>Things/Pawn/Animal/Apparel/HO_Armor/HOarmor</texPath>
         <drawSize>1.2</drawSize>
+        <baseLayer>7</baseLayer>
+        <pawnType>Any</pawnType>
       </li>
-    </comps>
+    </renderNodeProperties>
     <scenarioCanAdd>false</scenarioCanAdd>
   </HediffDef>
 
@@ -164,12 +180,17 @@
         </statOffsets>
       </li>
     </stages>
-    <comps>
-      <li Class="ET_Homunculus.HediffCompProperties_Overlay">
+    <renderNodeProperties>
+      <li>
+        <debugLabel>HO AT.Armor II overlay</debugLabel>
+        <nodeClass>ET_Homunculus.PawnRenderNode_HomunculusOverlay</nodeClass>
+        <parentTagDef>Body</parentTagDef>
         <texPath>Things/Pawn/Animal/Apparel/HO_ArmorAD/HOarmorAD</texPath>
         <drawSize>1.2</drawSize>
+        <baseLayer>7</baseLayer>
+        <pawnType>Any</pawnType>
       </li>
-    </comps>
+    </renderNodeProperties>
     <scenarioCanAdd>false</scenarioCanAdd>
   </HediffDef>
 
@@ -252,7 +273,7 @@
     <defName>HO_CT_Unity</defName>
     <label>CT.Unity</label>
     <labelNoun>a CT.Unity implant</labelNoun>
-    <description>Installed CT.Unity module.\n\nEffects:\n  Blunt armor +15%\n  Sharp armor +15%\n  Heat armor +10%\n  Move speed +1.5 c/s\n  Shooting accuracy +18\n  Melee hit chance +65%\n  Melee dodge chance +45%\n\nAbility: Jump</description>
+    <description>Installed CT.Unity module.\n\nEffects:\n  Blunt armor +30%\n  Sharp armor +30%\n  Heat armor +30%\n  Move speed +3.0 c/s\n  Shooting accuracy +30\n  Melee hit chance +112%\n  Melee dodge chance +75%\n\nAbility: Jump</description>
     <defaultLabelColor>(120,180,200)</defaultLabelColor>
     <isBad>false</isBad>
     <hediffClass>HediffWithComps</hediffClass>

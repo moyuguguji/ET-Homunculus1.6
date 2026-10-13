@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ET_NoHediffDefined>没有定义的Hediff。</ET_NoHediffDefined>
+  <ET_NoHealthTracker>目标没有健康追踪器。</ET_NoHealthTracker>
+  <ET_AlreadyInstalled>已安装过此模块。</ET_AlreadyInstalled>
+  <ET_IncompatibleRace>无法使用：种族不兼容。</ET_IncompatibleRace>
+  <ET_HigherTierInstalled>无法安装：已存在更高级的模块。</ET_HigherTierInstalled>
+  <ET_OvulateIn>排卵倒计时: </ET_OvulateIn>
+  <Nymph.comps.CompAsexualReproduction.customString>排卵: </Nymph.comps.CompAsexualReproduction.customString>
+  <ET_ModeSwitch>射击模式已切换至{0}</ET_ModeSwitch>
+
+  <!-- 外观装甲叠加层设置（隐藏衣服） -->
+  <ET_Homunculus>ET 人造树精</ET_Homunculus>
+  <ET_OverlaySettingsHeader>装甲外观叠加层（纯外观）</ET_OverlaySettingsHeader>
+  <ET_OverlaySettingsFooter>取消勾选即隐藏对应贴图。此处设置不影响任何属性或数值。</ET_OverlaySettingsFooter>
+  <ET_Overlay_Frame>框架衣物</ET_Overlay_Frame>
+  <ET_Overlay_Armor>护甲衣物</ET_Overlay_Armor>
+  <ET_Overlay_ArmorAD>护甲二衣物</ET_Overlay_ArmorAD>
+
+  <!-- 叠加层设置页显示的种族名称 -->
+  <ET_Race_Nymph>仙女</ET_Race_Nymph>
+  <ET_Race_Oread>山灵</ET_Race_Oread>
+  <ET_Race_Naiad>水灵</ET_Race_Naiad>
+</LanguageData>

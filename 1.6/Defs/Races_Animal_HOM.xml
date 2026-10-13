@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
   <!-- ===== Nymph | 花灵 | 速10 生命2x 护甲0.8 免疫10 | 可挤奶/可征召/无性繁殖 ===== -->
@@ -177,7 +177,6 @@
     <defName>Nymph</defName>
     <label>nymph</label>
     <race>Nymph</race>
-    <maxGenerationAge>0</maxGenerationAge>
     <combatPower>65</combatPower>
     <canStrip>true</canStrip>
     <ecoSystemWeight>0.5</ecoSystemWeight>
@@ -372,7 +371,6 @@
     <defName>Oread</defName>
     <label>oread</label>
     <race>Oread</race>
-    <maxGenerationAge>0</maxGenerationAge>
     <combatPower>70</combatPower>
     <canStrip>true</canStrip>
     <ecoSystemWeight>0.5</ecoSystemWeight>
@@ -584,7 +582,6 @@
     <defName>Naiad</defName>
     <label>naiad</label>
     <race>Naiad</race>
-    <maxGenerationAge>0</maxGenerationAge>
     <combatPower>65</combatPower>
     <canStrip>true</canStrip>
     <ecoSystemWeight>0.5</ecoSystemWeight>

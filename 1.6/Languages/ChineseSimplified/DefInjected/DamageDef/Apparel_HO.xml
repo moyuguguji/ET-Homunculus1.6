@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- DamageDef -->
+<LanguageData>
+  <!-- EN: ET.bullet -->
+  <ET_Damage.label>ET.枪伤</ET_Damage.label>
+  <!-- EN: ET.bomb -->
+  <ETBomb.label>ET.炸伤</ETBomb.label>
+  <!-- EN: Rock.bomb -->
+  <RockBomb.label>Rock.炸伤</RockBomb.label>
+</LanguageData>

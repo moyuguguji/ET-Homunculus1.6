@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>ET</defName>
+    <label>ET</label>
+    <parent>ItemsMisc</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>HOaparel</defName>
+    <label>Homunculus</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>Daparel</defName>
+    <label>Dryad module</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+</Defs>

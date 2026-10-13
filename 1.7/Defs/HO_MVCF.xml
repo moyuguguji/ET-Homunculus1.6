@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- ================ Multi Verb Combat Framework ================ -->
+  <MVCF.ModDef>
+    <defName>HO_MVCF</defName>
+    <label>HO MVCF</label>
+    <description>Added long range attack attribute</description>
+    <ActivateFeatures>
+      <li>RangedAnimals</li>
+      <li>IntegratedToggle</li>
+      <li>ApparelVerbs</li>
+    </ActivateFeatures>
+  </MVCF.ModDef>
+
+  <VEF.AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+    <defName>Example_DisabledAnimalSelfTames</defName>
+    <unaffectedBySelfTamePawns>
+      <li>Nymph</li>
+      <li>Oread</li>
+      <li>Naiad</li>
+      <li>Nerco</li>
+    </unaffectedBySelfTamePawns>
+  </VEF.AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+  
+  
+  <VEF.AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+    <defName>Example_DisabledAnimalFromQuests</defName>
+    <disabledFromQuestsPawns>
+      <li>Nymph</li>
+      <li>Oread</li>
+      <li>Naiad</li>
+      <li>Nerco</li>
+    </disabledFromQuestsPawns>
+  </VEF.AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+  
+</Defs>

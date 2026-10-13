@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- MVCF.ModDef -->
+<LanguageData>
+  <!-- EN: HO MVCF -->
+  <HO_MVCF.label>HO MVCF</HO_MVCF.label>
+  <!-- EN: Added long range attack attribute -->
+  <HO_MVCF.description>增加了远程攻击属性</HO_MVCF.description>
+</LanguageData>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- ResearchProjectDef -->
+<LanguageData>
+  <!-- EN: ET.Basic technology -->
+  <ET_BasicResearch.label>ET.基础技术</ET_BasicResearch.label>
+  <!-- EN: We will research basic technologies for access ET.matter -->
+  <ET_BasicResearch.description>我们将研究用于获取ET物质的基础技术。</ET_BasicResearch.description>
+  <!-- EN: ET.Homunculus production -->
+  <ET_HomProduction.label>ET.人造树精制造</ET_HomProduction.label>
+  <!-- EN: Homunculus are manufactured by restoring and culturing archetype cells extracted from dryad. -->
+  <ET_HomProduction.description>通过复原和培养从树精中提取的原型细胞，制造人造树精。</ET_HomProduction.description>
+  <!-- EN: ET.Pharmacy -->
+  <ET_ReactionAnalysis.label>ET.药学</ET_ReactionAnalysis.label>
+  <!-- EN: We will research drugs that apply ET.technology -->
+  <ET_ReactionAnalysis.description>我们将研究应用ET技术的药物。</ET_ReactionAnalysis.description>
+  <!-- EN: ET.Psylink -->
+  <ET_PSIPlusProduction.label>ET.启灵神经</ET_PSIPlusProduction.label>
+  <!-- EN: experiment with the ET protocol to form a psylink. -->
+  <ET_PSIPlusProduction.description>通过实验ET协议来制作启灵神经。</ET_PSIPlusProduction.description>
+  <!-- EN: D-Type module -->
+  <D_Dodule.label>D型模块</D_Dodule.label>
+  <!-- EN: Development of expansion modules to improve performance of dryad. -->
+  <D_Dodule.description>开发扩展模块，以提高树精的性能。</D_Dodule.description>
+  <!-- EN: CT.module -->
+  <CT_Module.label>CT模块</CT_Module.label>
+  <!-- EN: Development of expansion modules to improve performance of archetype homunculus. -->
+  <CT_Module.description>开发扩展模块，以提高原型人造树精的性能。</CT_Module.description>
+  <!-- EN: AT.module -->
+  <AT_Module.label>AT模块</AT_Module.label>
+  <!-- EN: Development of expansion module that strengthens physical resistance of archetype homunculus. -->
+  <AT_Module.description>开发强化原型人造树精物理抵抗力的扩展模块。</AT_Module.description>
+  <!-- EN: ET.module -->
+  <ET_Module.label>ET模块</ET_Module.label>
+  <!-- EN: Development of expansion module that releases limiter of archetype homunculus. -->
+  <ET_Module.description>开发释放原型人造树精限制器的扩展模块。</ET_Module.description>
+  <!-- EN: ET.Advanced technology -->
+  <ET_device.label>ET.高级技术</ET_device.label>
+  <!-- EN: Development of ET.control device. -->
+  <ET_device.description>开发ET控制装置。</ET_device.description>
+</LanguageData>

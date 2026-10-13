@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- RecipeDef -->
+<LanguageData>
+  <!-- EN: make ET.Plastic -->
+  <Make_i_polymerA.label>制作ET塑料</Make_i_polymerA.label>
+  <!-- EN: Make ET.Plastic -->
+  <Make_i_polymerA.description>制作ET塑料</Make_i_polymerA.description>
+  <!-- EN: Making ET.Plastic. -->
+  <Make_i_polymerA.jobString>制作ET塑料中。</Make_i_polymerA.jobString>
+  <!-- EN: make ET.Plastic x4 -->
+  <Make_i_polymerB.label>制作ET塑料 x4</Make_i_polymerB.label>
+  <!-- EN: Make ET.Plastic x4 -->
+  <Make_i_polymerB.description>制作ET塑料 x4</Make_i_polymerB.description>
+  <!-- EN: Making ET.Plastic. -->
+  <Make_i_polymerB.jobString>制作ET塑料中。</Make_i_polymerB.jobString>
+  <!-- EN: make ET.Neutralizer -->
+  <Make_ET_Liquid_Ether_WET.label>制作ET中和剂</Make_ET_Liquid_Ether_WET.label>
+  <!-- EN: Make ET.Neutralizer -->
+  <Make_ET_Liquid_Ether_WET.description>制作ET中和剂</Make_ET_Liquid_Ether_WET.description>
+  <!-- EN: Making ET.Neutralizer -->
+  <Make_ET_Liquid_Ether_WET.jobString>制作ET中和剂中。</Make_ET_Liquid_Ether_WET.jobString>
+  <!-- EN: repair -->
+  <HO_repair.label>维修</HO_repair.label>
+  <!-- EN: Perform homunculus maintenance. -->
+  <HO_repair.description>进行人造树精维护。</HO_repair.description>
+  <!-- EN: Homunculus maintenance in progress. -->
+  <HO_repair.jobString>正在进行人造树精维护。</HO_repair.jobString>
+  <!-- EN: make Luciferium x20 -->
+  <Make_ET_Luciferium.label>制作魔鬼素 x20</Make_ET_Luciferium.label>
+  <!-- EN: Make Luciferium -->
+  <Make_ET_Luciferium.description>制作魔鬼素</Make_ET_Luciferium.description>
+  <!-- EN: Making Luciferium -->
+  <Make_ET_Luciferium.jobString>制作魔鬼素中。</Make_ET_Luciferium.jobString>
+  <!-- EN: make ET.Luciferin -->
+  <Make_ET_Luciferin.label>制作ET荧光素</Make_ET_Luciferin.label>
+  <!-- EN: Make ET.luciferin -->
+  <Make_ET_Luciferin.description>制作ET荧光素</Make_ET_Luciferin.description>
+  <!-- EN: Making ET.luciferin -->
+  <Make_ET_Luciferin.jobString>制作ET荧光素中。</Make_ET_Luciferin.jobString>
+  <!-- EN: make ET.Medicine x4 -->
+  <Make_ET_Medicine.label>制作ET药品 x4</Make_ET_Medicine.label>
+  <!-- EN: Make ET.Medicine -->
+  <Make_ET_Medicine.description>制作ET药品</Make_ET_Medicine.description>
+  <!-- EN: Making ET.Medicine. -->
+  <Make_ET_Medicine.jobString>制作ET药品中。</Make_ET_Medicine.jobString>
+  <!-- EN: administer ET.Medicine -->
+  <AdministerETMedicine.label>使用ET药品</AdministerETMedicine.label>
+  <!-- EN: Administer a ET.Medicine. -->
+  <AdministerETMedicine.description>使用ET药品。</AdministerETMedicine.description>
+  <!-- EN: Administering ET.Medicine. -->
+  <AdministerETMedicine.jobString>正在使用ET药品。</AdministerETMedicine.jobString>
+  <!-- EN: make PSI-Plus -->
+  <Make_PSI_Plus.label>制作PSI-Plus</Make_PSI_Plus.label>
+  <!-- EN: Make PSI-Plus. -->
+  <Make_PSI_Plus.description>制作PSI-Plus。</Make_PSI_Plus.description>
+  <!-- EN: Making PSI-Plus. -->
+  <Make_PSI_Plus.jobString>制作PSI-Plus中。</Make_PSI_Plus.jobString>
+  <!-- EN: make N-Type Embryo -->
+  <Make_N_Embryo.label>制作N型胚胎</Make_N_Embryo.label>
+  <!-- EN: Make Nymph Embryo -->
+  <Make_N_Embryo.description>制作Nymph胚胎</Make_N_Embryo.description>
+  <!-- EN: Making N-Type Embryo -->
+  <Make_N_Embryo.jobString>制作N型胚胎中。</Make_N_Embryo.jobString>
+  <!-- EN: make S-Type Embryo -->
+  <Make_S_Embryo.label>制作S型胚胎</Make_S_Embryo.label>
+  <!-- EN: Make Oread Embryo -->
+  <Make_S_Embryo.description>制作Oread胚胎</Make_S_Embryo.description>
+  <!-- EN: Making S-Type Embryo -->
+  <Make_S_Embryo.jobString>制作S型胚胎中。</Make_S_Embryo.jobString>
+  <!-- EN: make L-Type Embryo -->
+  <Make_L_Embryo.label>制作L型胚胎</Make_L_Embryo.label>
+  <!-- EN: Make Naiad Embryo -->
+  <Make_L_Embryo.description>制作Naiad胚胎</Make_L_Embryo.description>
+  <!-- EN: Making L-Type Embryo -->
+  <Make_L_Embryo.jobString>制作L型胚胎中。</Make_L_Embryo.jobString>
+  <!-- EN: make Plasteel x75 -->
+  <Make_ET_Plasteel.label>制作玻璃钢 x75</Make_ET_Plasteel.label>
+  <!-- EN: Make Plasteel -->
+  <Make_ET_Plasteel.description>制作玻璃钢</Make_ET_Plasteel.description>
+  <!-- EN: Making Plasteel -->
+  <Make_ET_Plasteel.jobString>制作玻璃钢中。</Make_ET_Plasteel.jobString>
+  <!-- Module Installation -->
+  <AdministerCT_Protect.label>安装CT.保护</AdministerCT_Protect.label>
+  <AdministerCT_Protect.description>将CT.保护模块安装到人造树精体内。</AdministerCT_Protect.description>
+  <AdministerCT_Protect.jobString>正在安装CT.保护模块。</AdministerCT_Protect.jobString>
+  <AdministerCT_Haste.label>安装CT.急速</AdministerCT_Haste.label>
+  <AdministerCT_Haste.description>将CT.急速模块安装到人造树精体内。</AdministerCT_Haste.description>
+  <AdministerCT_Haste.jobString>正在安装CT.急速模块。</AdministerCT_Haste.jobString>
+  <AdministerCT_Maneuver.label>安装CT.机动</AdministerCT_Maneuver.label>
+  <AdministerCT_Maneuver.description>将CT.机动模块安装到人造树精体内。</AdministerCT_Maneuver.description>
+  <AdministerCT_Maneuver.jobString>正在安装CT.机动模块。</AdministerCT_Maneuver.jobString>
+  <AdministerET_Regen.label>安装ET.再生</AdministerET_Regen.label>
+  <AdministerET_Regen.description>将ET.再生模块安装到人造树精体内。</AdministerET_Regen.description>
+  <AdministerET_Regen.jobString>正在安装ET.再生模块。</AdministerET_Regen.jobString>
+  <AdministerAT_Frame.label>安装AT.框架</AdministerAT_Frame.label>
+  <AdministerAT_Frame.description>将AT.框架安装到人造树精体内。</AdministerAT_Frame.description>
+  <AdministerAT_Frame.jobString>正在安装AT.框架。</AdministerAT_Frame.jobString>
+  <AdministerAT_Armor.label>安装AT.装甲</AdministerAT_Armor.label>
+  <AdministerAT_Armor.description>将AT.装甲安装到人造树精体内。</AdministerAT_Armor.description>
+  <AdministerAT_Armor.jobString>正在安装AT.装甲。</AdministerAT_Armor.jobString>
+  <AdministerAT_ArmorAD.label>安装AT.装甲 II</AdministerAT_ArmorAD.label>
+  <AdministerAT_ArmorAD.description>将AT.装甲 II安装到人造树精体内。</AdministerAT_ArmorAD.description>
+  <AdministerAT_ArmorAD.jobString>正在安装AT.装甲 II。</AdministerAT_ArmorAD.jobString>
+  <AdministerD_Basic.label>安装D-基础</AdministerD_Basic.label>
+  <AdministerD_Basic.description>将D-基础模块安装到树精体内。</AdministerD_Basic.description>
+  <AdministerD_Basic.jobString>正在安装D-基础模块。</AdministerD_Basic.jobString>
+  <AdministerD_PRO.label>安装D-专业</AdministerD_PRO.label>
+  <AdministerD_PRO.description>将D-专业模块安装到树精体内。</AdministerD_PRO.description>
+  <AdministerD_PRO.jobString>正在安装D-专业模块。</AdministerD_PRO.jobString>
+
+  <AdministerCT_Jump.label>安装CT.跳跃</AdministerCT_Jump.label>
+  <AdministerCT_Jump.description>将CT.跳跃模块安装到人造树精体内。</AdministerCT_Jump.description>
+  <AdministerCT_Jump.jobString>正在安装CT.跳跃模块。</AdministerCT_Jump.jobString>
+
+  <AdministerCT_Shield.label>安装CT.护盾</AdministerCT_Shield.label>
+  <AdministerCT_Shield.description>将CT.护盾模块安装到人造树精体内。</AdministerCT_Shield.description>
+  <AdministerCT_Shield.jobString>正在安装CT.护盾模块。</AdministerCT_Shield.jobString>
+
+  <Make_ET_Liquid_Ether_DRY.label>制作干燥液体醚</Make_ET_Liquid_Ether_DRY.label>
+  <Make_ET_Liquid_Ether_DRY.description>制作干燥液体醚</Make_ET_Liquid_Ether_DRY.description>
+  <Make_ET_Liquid_Ether_DRY.jobString>制作干燥液体醚中。</Make_ET_Liquid_Ether_DRY.jobString>
+
+</LanguageData>

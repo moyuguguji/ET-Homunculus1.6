@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <!-- ================ ApparelLayerDef ================ 
@@ -191,6 +191,22 @@
         <soundOnUsed>PsyAmpInstalled</soundOnUsed>
       </li>
       <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="MVCF.Comps.CompProperties_VerbGiver">
+        <verbProps>
+          <li>
+            <label>jump</label>
+            <visualLabel>jump</visualLabel>
+            <canBeToggled>true</canBeToggled>
+            <description>jumping move\nrecast/0.4h</description>
+            <comps>
+              <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+                <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+                <cooldownTime>20</cooldownTime>
+              </li>
+            </comps>
+          </li>
+        </verbProps>
+      </li>
     </comps>
     <statBases>
       <JumpRange>28</JumpRange>
@@ -217,24 +233,6 @@
         </targetParams>
       </li>
     </verbs>
-    <comps>
-      <li Class="MVCF.Comps.CompProperties_VerbGiver">
-        <verbProps>
-          <li>
-            <label>jump</label>
-            <visualLabel>jump</visualLabel>
-            <canBeToggled>true</canBeToggled>
-            <description>jumping move\nrecast/0.4h</description>
-            <comps>
-              <li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
-                <compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
-                <cooldownTime>20</cooldownTime>
-              </li>
-            </comps>
-          </li>
-        </verbProps>
-      </li>
-    </comps>
     <costList>
       <ET_i_polymer>4</ET_i_polymer>
       <Chemfuel>50</Chemfuel>
@@ -325,6 +323,11 @@
         <soundOnUsed>PsyAmpInstalled</soundOnUsed>
       </li>
       <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="VEF.Apparels.CompProperties_ApparelHediffs">
+        <hediffDefnames>
+          <li>ETregen</li>
+        </hediffDefnames>
+      </li>
     </comps>
     <graphicData>
       <texPath>Things/Pawn/Animal/Apparel/HO_Ex_module</texPath>
@@ -342,13 +345,6 @@
       <MeleeDodgeChance>+10</MeleeDodgeChance>
     </equippedStatOffsets>
     <tickerType>Normal</tickerType>
-    <comps>
-      <li Class="VEF.Apparels.CompProperties_ApparelHediffs">
-        <hediffDefnames>
-          <li>ETregen</li>
-        </hediffDefnames>
-      </li>
-    </comps>
     <costList>
       <ET_i_polymer>30</ET_i_polymer>
       <DryadStone>3</DryadStone>

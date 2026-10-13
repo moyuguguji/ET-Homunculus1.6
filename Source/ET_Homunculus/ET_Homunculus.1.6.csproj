@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>ET_Homunculus</AssemblyName>
+    <RootNamespace>ET_Homunculus</RootNamespace>
+    <LangVersion>9.0</LangVersion>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- RimWorld 1.6 build output -->
+    <OutputPath>..\..\1.6\Assemblies</OutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <NoWarn>$(NoWarn);CS0649</NoWarn>
+    <AssemblySearchPaths>$(AssemblySearchPaths);{HintPathFromItem}</AssemblySearchPaths>
+  </PropertyGroup>
+
+  <!--
+    RimWorld 1.6 is a Unity/Mono build: the game assemblies live in
+    RimWorldWin64_Data\Managed. Override GameDir to build against another install.
+  -->
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == ''">G:\steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Widgets.Checkbox / Listing_Standard need the IMGUI module -->
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(GameDir)\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

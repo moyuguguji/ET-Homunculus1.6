@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!--==============　PsychoCaramel　==============-->
+  <Operation Class="PatchOperationReplace" MayRequire="Humanoid Dryad(Continued)">
+    <xpath>Defs/ThingDef[defName = "PsychoCaramel"]/costList</xpath>
+    <value>
+      <costList>
+        <DryadPetal>4</DryadPetal>
+        <PsychoidLeaves>1</PsychoidLeaves>
+        <NymphMilk>2</NymphMilk>
+    </costList>
+    </value>
+  </Operation>
+
+</Patch>

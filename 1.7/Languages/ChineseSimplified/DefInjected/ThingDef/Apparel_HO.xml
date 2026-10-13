@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- ThingDef -->
+<LanguageData>
+  <!-- EN: CT.Protect -->
+  <ET_HO_N_protect.label>CT.保护</ET_HO_N_protect.label>
+  <!-- EN: Plugin module for homunculus\nArmor plus -->
+  <ET_HO_N_protect.description>插件模块用于人造树精\n增强护甲</ET_HO_N_protect.description>
+  <!-- EN: CT.Haste -->
+  <ET_HO_N_speed.label>CT.急速</ET_HO_N_speed.label>
+  <!-- EN: Plugin module for homunculus\nImproved movement speed -->
+  <ET_HO_N_speed.description>插件模块用于人造树精\n提高移动速度</ET_HO_N_speed.description>
+  <!-- EN: CT.Maneuver -->
+  <ET_HO_N_maneuver.label>CT.机动</ET_HO_N_maneuver.label>
+  <!-- EN: Plugin module for homunculus\nImproved hit and evasion rate -->
+  <ET_HO_N_maneuver.description>插件模块用于人造树精\n提高命中和闪避率</ET_HO_N_maneuver.description>
+  <!-- EN: CT.Jump -->
+  <ET_HO_N_jump.label>CT.跳跃</ET_HO_N_jump.label>
+  <!-- EN: Plugin module for homunculus\n\nAbility: Jump -->
+  <ET_HO_N_jump.description>插件模块用于人造树精\n\n技能：跳跃</ET_HO_N_jump.description>
+  <!-- EN: jump -->
+  <ET_HO_N_jump.verbs.0.label>跳跃</ET_HO_N_jump.verbs.0.label>
+  <!-- EN: jump -->
+  <ET_HO_N_jump.comps.0.verbProps.0.label>跳跃</ET_HO_N_jump.comps.0.verbProps.0.label>
+  <!-- EN: jumping move\nrecast/0.4h -->
+  <ET_HO_N_jump.comps.0.verbProps.0.description>跳跃移动\n重置/0.4小时</ET_HO_N_jump.comps.0.verbProps.0.description>
+  <!-- EN: CT.Unity -->
+  <ET_HO_N_Unity.label>CT.合一</ET_HO_N_Unity.label>
+  <!-- EN: Plugin module for homunculus\n\nStrengthening physical\nAbility: Jump -->
+  <ET_HO_N_Unity.description>用于人造树精的插件模块\n\n强化物理能力\n技能：跳跃</ET_HO_N_Unity.description>
+  <!-- EN: ET.Regen -->
+  <ET_HO_Ex_Regen.label>ET.再生</ET_HO_Ex_Regen.label>
+  <!-- EN: Expansion module for Nymph\n\nStrengthening physical\nAuto regeneration -->
+  <ET_HO_Ex_Regen.description>仙女扩展模块\n\n强化物理能力\n自动再生</ET_HO_Ex_Regen.description>
+  <!-- EN: ET.Impact -->
+  <ET_HO_Ex_Impact.label>ET.冲击</ET_HO_Ex_Impact.label>
+  <!-- EN: Expansion module for Nymph and Oread\n\nLong-range ballistic bombing. -->
+  <ET_HO_Ex_Impact.description>仙女和山灵扩展模块\n\n远程弹道轰炸</ET_HO_Ex_Impact.description>
+  <!-- EN: ET.Impact -->
+  <ET_HO_Ex_Impact.verbs.0.label>ET.冲击</ET_HO_Ex_Impact.verbs.0.label>
+  <!-- EN: ET.Impact -->
+  <ET_HO_Ex_Impact.comps.0.verbProps.0.label>ET.冲击</ET_HO_Ex_Impact.comps.0.verbProps.0.label>
+  <!-- EN: long-range ballistic bombing\nrecast/14h -->
+  <ET_HO_Ex_Impact.comps.0.verbProps.0.description>远程弹道轰炸\n重置/14小时</ET_HO_Ex_Impact.comps.0.verbProps.0.description>
+  <!-- EN: ET.Effect -->
+  <Bullet_ETImpact.label>ET.效果</Bullet_ETImpact.label>
+  <!-- EN: ET.Bolt -->
+  <ET_HO_Ex_Bolt.label>ET.脉冲</ET_HO_Ex_Bolt.label>
+  <ET_HO_Ex_Bolt.description>仙女和水灵扩展模块\n\nEMP脉冲，瘫痪机械族。</ET_HO_Ex_Bolt.description>
+  <!-- EN: ET.bolt -->
+  <Bullet_ET_Bolt.label>ET.电弧</Bullet_ET_Bolt.label>
+  <ET_BulletA.label>ET.子弹</ET_BulletA.label>
+  <ET_BulletC.label>ET.子弹</ET_BulletC.label>
+  <!-- EN: ET.Launcher -->
+  <ET_HO_Ex_Orbit.label>ET.发射器</ET_HO_Ex_Orbit.label>
+  <!-- EN: Expansion module for Oread\nLong-range ballistic bombing -->
+  <ET_HO_Ex_Orbit.description>山灵扩展模块\n远程弹道轰炸</ET_HO_Ex_Orbit.description>
+  <!-- EN: ET.Launcher -->
+  <ET_HO_Ex_Orbit.comps.0.verbProps.0.label>ET.发射器</ET_HO_Ex_Orbit.comps.0.verbProps.0.label>
+  <!-- EN: Long-range ballistic bombing\nrecast/14h -->
+  <ET_HO_Ex_Orbit.comps.0.verbProps.0.description>远程弹道轰炸\n重置/14小时</ET_HO_Ex_Orbit.comps.0.verbProps.0.description>
+  <!-- EN: ET.Launcher rocket -->
+  <Bullet_ETRocket.label>ET.发射器火箭</Bullet_ETRocket.label>
+  <!-- EN: AT.Frame -->
+  <ET_HO_ArmorBase.label>AT.框架</ET_HO_ArmorBase.label>
+  <!-- EN: Basic AT.frame for homunculus. -->
+  <ET_HO_ArmorBase.description>人造树精的基础AT框架。</ET_HO_ArmorBase.description>
+  <!-- EN: AT.Armor -->
+  <ET_HO_ArmorNT.label>AT.护甲</ET_HO_ArmorNT.label>
+  <!-- EN: AT.armor for homunculus. -->
+  <ET_HO_ArmorNT.description>人造树精的AT护甲。</ET_HO_ArmorNT.description>
+  <!-- EN: AT.Armor Ⅱ -->
+  <ET_HO_ArmorAT.label>AT.护甲Ⅱ</ET_HO_ArmorAT.label>
+  <!-- EN: AT.reinforced armor for Homunculus. -->
+  <ET_HO_ArmorAT.description>人造树精的加强护甲。</ET_HO_ArmorAT.description>
+  <!-- EN: D-Basic -->
+  <Dryad_Mo_Basic.label>D-基础</Dryad_Mo_Basic.label>
+  <!-- EN: Plugin module for Dryad. -->
+  <Dryad_Mo_Basic.description>树精的插件模块。</Dryad_Mo_Basic.description>
+  <!-- EN: D-PRO -->
+  <Dryad_Mo_PRO.label>D-PRO</Dryad_Mo_PRO.label>
+  <!-- EN: Plugin module for Dryad. -->
+  <Dryad_Mo_PRO.description>树精的插件模块。</Dryad_Mo_PRO.description>
+  <!-- EN: D-Lancet -->
+  <Dryad_Mo_Lancet.label>D-刺枪</Dryad_Mo_Lancet.label>
+  <!-- EN: Plugin module for Dryad Clawer, ranged attack -->
+  <Dryad_Mo_Lancet.description>利爪树精的插件模块，远程攻击。</Dryad_Mo_Lancet.description>
+  <!-- EN: D-Lancet -->
+  <Dryad_Mo_Lancet.verbs.0.label>D-刺枪</Dryad_Mo_Lancet.verbs.0.label>
+  <!-- EN: D-Lancet -->
+  <Dryad_Mo_Lancet.comps.0.verbProps.0.label>D-刺枪</Dryad_Mo_Lancet.comps.0.verbProps.0.label>
+  <!-- EN: ranged attack -->
+  <Dryad_Mo_Lancet.comps.0.verbProps.0.description>远程攻击</Dryad_Mo_Lancet.comps.0.verbProps.0.description>
+  <!-- EN: D-LANCET -->
+  <DLancet_Thrown.label>D-刺枪</DLancet_Thrown.label>
+  <!-- EN: D-Missile -->
+  <Dryad_Mo_WoodLauncher.label>D-导弹</Dryad_Mo_WoodLauncher.label>
+  <!-- EN: Plugin module for Dryad Woodmaker, ranged attack -->
+  <Dryad_Mo_WoodLauncher.description>供木树精的插件模块，远程攻击。</Dryad_Mo_WoodLauncher.description>
+  <!-- EN: D-Missile -->
+  <Dryad_Mo_WoodLauncher.verbs.0.label>D-导弹</Dryad_Mo_WoodLauncher.verbs.0.label>
+  <!-- EN: D-Missile -->
+  <Dryad_Mo_WoodLauncher.comps.0.verbProps.0.label>D-导弹</Dryad_Mo_WoodLauncher.comps.0.verbProps.0.label>
+  <!-- EN: ranged attack\nrecast/14h -->
+  <Dryad_Mo_WoodLauncher.comps.0.verbProps.0.description>远程攻击\n重置/14小时</Dryad_Mo_WoodLauncher.comps.0.verbProps.0.description>
+  <!-- EN: D-Wood -->
+  <D_wood.label>D-木</D_wood.label>
+  <!-- EN: D-Canon -->
+  <Dryad_Mo_RockCanon.label>D-加农炮</Dryad_Mo_RockCanon.label>
+  <!-- EN: Plugin module for Dryad Carrier, ranged attack -->
+  <Dryad_Mo_RockCanon.description>协运树精的插件模块，远程攻击。</Dryad_Mo_RockCanon.description>
+  <!-- EN: D-Canon -->
+  <Dryad_Mo_RockCanon.verbs.0.label>D-加农炮</Dryad_Mo_RockCanon.verbs.0.label>
+  <!-- EN: D-Canon -->
+  <Dryad_Mo_RockCanon.comps.0.verbProps.0.label>D-加农炮</Dryad_Mo_RockCanon.comps.0.verbProps.0.label>
+  <!-- EN: ranged attack\nrecast/14h -->
+  <Dryad_Mo_RockCanon.comps.0.verbProps.0.description>远程攻击\n重置/14小时</Dryad_Mo_RockCanon.comps.0.verbProps.0.description>
+  <!-- EN: D-Rock -->
+  <D_Rock.label>D-石块</D_Rock.label>
+  <!-- UseLabel -->
+  <ET_HO_N_protect.comps.2.useLabel>安装 {0_label}</ET_HO_N_protect.comps.2.useLabel>
+  <ET_HO_N_speed.comps.2.useLabel>安装 {0_label}</ET_HO_N_speed.comps.2.useLabel>
+  <ET_HO_N_maneuver.comps.2.useLabel>安装 {0_label}</ET_HO_N_maneuver.comps.2.useLabel>
+  <ET_HO_Ex_Regen.comps.2.useLabel>安装 {0_label}</ET_HO_Ex_Regen.comps.2.useLabel>
+  <ET_HO_ArmorBase.comps.2.useLabel>安装 {0_label}</ET_HO_ArmorBase.comps.2.useLabel>
+  <ET_HO_ArmorNT.comps.2.useLabel>安装 {0_label}</ET_HO_ArmorNT.comps.2.useLabel>
+  <ET_HO_ArmorAT.comps.2.useLabel>安装 {0_label}</ET_HO_ArmorAT.comps.2.useLabel>
+  <Dryad_Mo_Basic>安装 {0_label}</Dryad_Mo_Basic>
+  <Dryad_Mo_Basic.comps.4.useLabel>安装 {0_label}</Dryad_Mo_Basic.comps.4.useLabel>
+  <Dryad_Mo_PRO>安装 {0_label}</Dryad_Mo_PRO>
+  <Dryad_Mo_PRO.comps.4.useLabel>安装 {0_label}</Dryad_Mo_PRO.comps.4.useLabel>
+  <ET_HO_N_jump.comps.2.useLabel>安装 {0_label}</ET_HO_N_jump.comps.2.useLabel>
+  <ET_HO_N_Unity.comps.2.useLabel>安装 {0_label}</ET_HO_N_Unity.comps.2.useLabel>
+
+  <!-- ET/D武器模块 UseLabel -->
+  <ET_HO_Ex_Bolt.comps.2.useLabel>安装 {0_label}</ET_HO_Ex_Bolt.comps.2.useLabel>
+  <ET_HO_Ex_Impact.comps.2.useLabel>安装 {0_label}</ET_HO_Ex_Impact.comps.2.useLabel>
+  <ET_HO_Ex_Orbit.comps.2.useLabel>安装 {0_label}</ET_HO_Ex_Orbit.comps.2.useLabel>
+  <Dryad_Mo_Lancet>安装 {0_label}</Dryad_Mo_Lancet>
+  <Dryad_Mo_Lancet.comps.4.useLabel>安装 {0_label}</Dryad_Mo_Lancet.comps.4.useLabel>
+  <Dryad_Mo_WoodLauncher>安装 {0_label}</Dryad_Mo_WoodLauncher>
+  <Dryad_Mo_WoodLauncher.comps.4.useLabel>安装 {0_label}</Dryad_Mo_WoodLauncher.comps.4.useLabel>
+  <Dryad_Mo_RockCanon>安装 {0_label}</Dryad_Mo_RockCanon>
+  <Dryad_Mo_RockCanon.comps.4.useLabel>安装 {0_label}</Dryad_Mo_RockCanon.comps.4.useLabel>
+
+  <!-- ET/D武器模块 MVCF VerbGiver -->
+  <ET_HO_Ex_Impact.comps.4.verbProps.0.label>ET.冲击</ET_HO_Ex_Impact.comps.4.verbProps.0.label>
+  <ET_HO_Ex_Impact.comps.4.verbProps.0.description>远程弹道轰炸\n重置/14小时</ET_HO_Ex_Impact.comps.4.verbProps.0.description>
+  <ET_HO_Ex_Orbit.comps.4.verbProps.0.label>ET.发射器</ET_HO_Ex_Orbit.comps.4.verbProps.0.label>
+  <ET_HO_Ex_Orbit.comps.4.verbProps.0.description>远程弹道轰炸\n重置/14小时</ET_HO_Ex_Orbit.comps.4.verbProps.0.description>
+  <Dryad_Mo_Lancet.comps.4.verbProps.0.label>D-刺枪</Dryad_Mo_Lancet.comps.4.verbProps.0.label>
+  <Dryad_Mo_Lancet.comps.4.verbProps.0.description>远程攻击</Dryad_Mo_Lancet.comps.4.verbProps.0.description>
+  <Dryad_Mo_WoodLauncher.comps.4.verbProps.0.label>D-导弹</Dryad_Mo_WoodLauncher.comps.4.verbProps.0.label>
+  <Dryad_Mo_WoodLauncher.comps.4.verbProps.0.description>远程攻击\n重置/14小时</Dryad_Mo_WoodLauncher.comps.4.verbProps.0.description>
+  <Dryad_Mo_RockCanon.comps.4.verbProps.0.label>D-加农炮</Dryad_Mo_RockCanon.comps.4.verbProps.0.label>
+  <Dryad_Mo_RockCanon.comps.4.verbProps.0.description>远程攻击\n重置/14小时</Dryad_Mo_RockCanon.comps.4.verbProps.0.description>
+
+</LanguageData>

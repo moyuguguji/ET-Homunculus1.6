@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- CT.Protect -->
+  <HO_CT_Protect.label>CT.保护</HO_CT_Protect.label>
+  <HO_CT_Protect.labelNoun>CT.保护植入体</HO_CT_Protect.labelNoun>
+  <HO_CT_Protect.description>已安装的CT.保护模块。\n\n增强钝器、利器和热能护甲。</HO_CT_Protect.description>
+
+  <!-- CT.Haste -->
+  <HO_CT_Haste.label>CT.急速</HO_CT_Haste.label>
+  <HO_CT_Haste.labelNoun>CT.急速植入体</HO_CT_Haste.labelNoun>
+  <HO_CT_Haste.description>已安装的CT.急速模块。\n\n提高移动速度。</HO_CT_Haste.description>
+
+  <!-- CT.Maneuver -->
+  <HO_CT_Maneuver.label>CT.机动</HO_CT_Maneuver.label>
+  <HO_CT_Maneuver.labelNoun>CT.机动植入体</HO_CT_Maneuver.labelNoun>
+  <HO_CT_Maneuver.description>已安装的CT.机动模块。\n\n提高射击精度、近战命中和闪避。</HO_CT_Maneuver.description>
+
+  <!-- ET.Regen -->
+  <HO_ET_Regen.label>ET.再生</HO_ET_Regen.label>
+  <HO_ET_Regen.labelNoun>ET.再生植入体</HO_ET_Regen.labelNoun>
+  <HO_ET_Regen.description>已安装的ET.再生模块。\n\n增强护甲与近战能力，并自动再生伤口。</HO_ET_Regen.description>
+
+  <!-- AT.Frame -->
+  <HO_AT_Frame.label>AT.框架</HO_AT_Frame.label>
+  <HO_AT_Frame.labelNoun>AT.框架植入体</HO_AT_Frame.labelNoun>
+  <HO_AT_Frame.description>已安装的AT.框架。\n\n基础护甲增强。</HO_AT_Frame.description>
+
+  <!-- AT.Armor -->
+  <HO_AT_Armor.label>AT.装甲</HO_AT_Armor.label>
+  <HO_AT_Armor.labelNoun>AT.装甲植入体</HO_AT_Armor.labelNoun>
+  <HO_AT_Armor.description>已安装的AT.装甲。\n\n全面护甲增强。</HO_AT_Armor.description>
+
+  <!-- AT.Armor II -->
+  <HO_AT_ArmorAD.label>AT.装甲 II</HO_AT_ArmorAD.label>
+  <HO_AT_ArmorAD.labelNoun>AT.装甲 II 植入体</HO_AT_ArmorAD.labelNoun>
+  <HO_AT_ArmorAD.description>已安装的AT.装甲 II。\n\n大幅护甲增强。</HO_AT_ArmorAD.description>
+
+  <!-- D-Basic -->
+  <HO_D_Basic.label>D-基础</HO_D_Basic.label>
+  <HO_D_Basic.labelNoun>D-基础植入体</HO_D_Basic.labelNoun>
+  <HO_D_Basic.description>已安装的D-基础模块。\n\n基础护甲与移速增强。</HO_D_Basic.description>
+
+  <!-- D-PRO -->
+  <HO_D_PRO.label>D-PRO</HO_D_PRO.label>
+  <HO_D_PRO.labelNoun>D-PRO植入体</HO_D_PRO.labelNoun>
+  <HO_D_PRO.description>已安装的D-专业模块。\n\n全面护甲、移速与近战增强。</HO_D_PRO.description>
+
+  <HO_CT_Jump.label>CT.跳跃</HO_CT_Jump.label>
+  <HO_CT_Jump.labelNoun>CT.跳跃植入体</HO_CT_Jump.labelNoun>
+  <HO_CT_Jump.description>已安装的CT.跳跃模块。\n\n技能：跳跃</HO_CT_Jump.description>
+
+  <HO_CT_Unity.label>CT.合一</HO_CT_Unity.label>
+  <HO_CT_Unity.labelNoun>CT.合一植入体</HO_CT_Unity.labelNoun>
+  <HO_CT_Unity.description>已安装的CT.合一模块。\n\n全面属性增强。\n\n技能：跳跃</HO_CT_Unity.description>
+
+  <HO_ET_Ability_Bolt.label>ET.脉冲</HO_ET_Ability_Bolt.label>
+  <HO_ET_Ability_Bolt.description>授予EMP脉冲能力，可瘫痪机械族。</HO_ET_Ability_Bolt.description>
+  <HO_ET_Ability_Impact.label>ET.冲击</HO_ET_Ability_Impact.label>
+  <HO_ET_Ability_Impact.description>授予远程弹道轰炸能力。</HO_ET_Ability_Impact.description>
+  <HO_ET_Ability_Launcher.label>ET.发射器</HO_ET_Ability_Launcher.label>
+  <HO_ET_Ability_Launcher.description>授予远程弹道轰炸能力。</HO_ET_Ability_Launcher.description>
+
+  <HO_D_Ability_Lancet.label>D-柳叶刀</HO_D_Ability_Lancet.label>
+  <HO_D_Ability_Lancet.description>授予远程攻击能力。</HO_D_Ability_Lancet.description>
+  <HO_D_Ability_Missile.label>D-导弹</HO_D_Ability_Missile.label>
+  <HO_D_Ability_Missile.description>授予爆炸性远程攻击能力。</HO_D_Ability_Missile.description>
+  <HO_D_Ability_Canon.label>D-加农炮</HO_D_Ability_Canon.label>
+  <HO_D_Ability_Canon.description>授予爆炸性远程攻击能力。</HO_D_Ability_Canon.description>
+
+</LanguageData>

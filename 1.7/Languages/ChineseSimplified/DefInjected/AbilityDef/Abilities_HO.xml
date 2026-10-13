@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HO_Heal.label>治愈</HO_Heal.label>
+  <HO_Heal.description>治愈一个永久性损伤或恢复缺失的身体部位。</HO_Heal.description>
+
+  <HO_Jump.label>跳跃</HO_Jump.label>
+  <HO_Jump.description>跳跃到范围内的目标位置。</HO_Jump.description>
+
+  <ET_Bolt.label>ET.脉冲</ET_Bolt.label>
+  <ET_Bolt.description>发射EMP脉冲，瘫痪机械族。</ET_Bolt.description>
+  <ET_Impact.label>ET.冲击</ET_Impact.label>
+  <ET_Impact.description>远程弹道轰炸。</ET_Impact.description>
+  <ET_Launcher.label>ET.发射器</ET_Launcher.label>
+  <ET_Launcher.description>远程弹道轰炸。</ET_Launcher.description>
+
+  <D_Lancet.label>D-柳叶刀</D_Lancet.label>
+  <D_Lancet.description>远程攻击。</D_Lancet.description>
+  <D_Missile.label>D-导弹</D_Missile.label>
+  <D_Missile.description>爆炸性远程攻击。</D_Missile.description>
+  <D_Canon.label>D-加农炮</D_Canon.label>
+  <D_Canon.description>爆炸性远程攻击。</D_Canon.description>
+</LanguageData>

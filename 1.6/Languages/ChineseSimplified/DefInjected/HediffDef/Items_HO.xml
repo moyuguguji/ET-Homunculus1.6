@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- HediffDef -->
+<LanguageData>
+  <!-- EN: oxytocin rush -->
+  <Oxytocin_rush.label>催产素突增</Oxytocin_rush.label>
+  <!-- EN: A condition in which oxytocin is secreted in excess. -->
+  <Oxytocin_rush.description>一种催产素分泌过多的状态。</Oxytocin_rush.description>
+  <!-- EN: hallucinatory sleep -->
+  <E_Climax.label>幻觉之眠</E_Climax.label>
+  <!-- EN: a hallucinatory sleep -->
+  <E_Climax.labelNoun>一次幻觉之眠</E_Climax.labelNoun>
+  <!-- EN: Reaching climax in a pleasant hallucinatory sleep. -->
+  <E_Climax.description>在愉悦的幻觉之眠中达到高潮。</E_Climax.description>
+  <!-- EN: E.Luciferase -->
+  <ET_luciferinHigh.label>魔鬼素愉悦</ET_luciferinHigh.label>
+  <!-- EN: The world is red. dyed red. the red. -->
+  <ET_luciferinHigh.description>世界是红色的。染成红色了。红色。</ET_luciferinHigh.description>
+  <!-- EN: immunoglobulin N -->
+  <N_LactoferrinHigh.label>免疫球蛋白 N</N_LactoferrinHigh.label>
+  <!-- EN: IgN homeostatic immunity. -->
+  <N_LactoferrinHigh.description>IgN稳态免疫。</N_LactoferrinHigh.description>
+</LanguageData>

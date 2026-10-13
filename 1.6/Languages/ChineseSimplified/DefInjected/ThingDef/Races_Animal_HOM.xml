@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 物品定义 -->
+<LanguageData>
+  <!-- EN: nymph -->
+  <Nymph.label>仙女</Nymph.label>
+  <Nymph.comps.CompAsexualReproduction.customString>排卵倒计时: </Nymph.comps.CompAsexualReproduction.customString>
+  <!-- EN: A mysterious animal reconstructed from the Dryad archetype gene. -->
+  <Nymph.description>一种从树精原型基因重建而来的神秘动物。</Nymph.description>
+  <!-- EN: left claw -->
+  <Nymph.tools.0.label>左爪</Nymph.tools.0.label>
+  <!-- EN: right claw -->
+  <Nymph.tools.1.label>右爪</Nymph.tools.1.label>
+  <!-- EN: head -->
+  <Nymph.tools.3.label>头部</Nymph.tools.3.label>
+  <!-- EN: oread -->
+  <Oread.label>山灵</Oread.label>
+  <!-- EN: A mysterious animal that generates minerals at regular intervals. -->
+  <Oread.description>一种定期生成矿物质的神秘动物。</Oread.description>
+  <!-- EN: left fist -->
+  <Oread.tools.0.label>左拳</Oread.tools.0.label>
+  <!-- EN: right fist -->
+  <Oread.tools.1.label>右拳</Oread.tools.1.label>
+  <!-- EN: teeth -->
+  <Oread.tools.2.label>牙齿</Oread.tools.2.label>
+  <!-- EN: head -->
+  <Oread.tools.3.label>头部</Oread.tools.3.label>
+  <Oread.comps.CompAutoNutrition.customString>捕食疑似记忆空间中</Oread.comps.CompAutoNutrition.customString>
+  <!-- EN: naiad -->
+  <Naiad.label>水灵</Naiad.label>
+  <!-- EN: A mysterious animal that has the habit of injecting its own secretions liquid into a cylinder. -->
+  <Naiad.description>一种有将自己的分泌液注入圆桶的习性的神秘动物。</Naiad.description>
+  <!-- EN: left fist -->
+  <Naiad.tools.0.label>左拳</Naiad.tools.0.label>
+  <!-- EN: right fist -->
+  <Naiad.tools.1.label>右拳</Naiad.tools.1.label>
+  <!-- EN: teeth -->
+  <Naiad.tools.2.label>牙齿</Naiad.tools.2.label>
+  <!-- EN: head -->
+  <Naiad.tools.3.label>头部</Naiad.tools.3.label>
+  <Naiad.comps.CompAutoNutrition.customString>捕食强制移体代码中</Naiad.comps.CompAutoNutrition.customString>
+  <Naiad.verbs.0.label>ET.子弹</Naiad.verbs.0.label>
+  <Naiad.verbs.1.label>ET.步枪</Naiad.verbs.1.label>
+  <!-- EN: Nerco -->
+  <Nerco.label>尸妖</Nerco.label>
+  <!-- EN: A homunculus with degenerated traits due to the activation of reproductive control genes. -->
+  <Nerco.description>由于生殖控制基因的激活而导致特征退化的人造树精。</Nerco.description>
+  <!-- EN: ??? -->
+  <Nerco.tools.0.label>???</Nerco.tools.0.label>
+  <Nerco.comps.CompAutoNutrition.customString>自食中</Nerco.comps.CompAutoNutrition.customString>
+</LanguageData>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ET_NoHediffDefined>No hediff defined.</ET_NoHediffDefined>
+  <ET_NoHealthTracker>Target has no health tracker.</ET_NoHealthTracker>
+  <ET_AlreadyInstalled>Already installed.</ET_AlreadyInstalled>
+  <ET_IncompatibleRace>Cannot use: incompatible race.</ET_IncompatibleRace>
+  <ET_HigherTierInstalled>Cannot install: a higher-tier module is already installed.</ET_HigherTierInstalled>
+  <ET_OvulateIn>Ovulate in: </ET_OvulateIn>
+
+  <!-- Cosmetic armour overlay settings ("hidden clothing") -->
+  <ET_Homunculus>ET Homunculus</ET_Homunculus>
+  <ET_OverlaySettingsHeader>Armour overlays (cosmetic only)</ET_OverlaySettingsHeader>
+  <ET_OverlaySettingsFooter>Unticking a layer hides its texture. Nothing here changes stats or gameplay.</ET_OverlaySettingsFooter>
+  <ET_Overlay_Frame>AT.Frame clothing</ET_Overlay_Frame>
+  <ET_Overlay_Armor>AT.Armor clothing</ET_Overlay_Armor>
+  <ET_Overlay_ArmorAD>AT.Armor II clothing</ET_Overlay_ArmorAD>
+
+  <!-- Race display names used by the overlay settings page -->
+  <ET_Race_Nymph>Nymph</ET_Race_Nymph>
+  <ET_Race_Oread>Oread</ET_Race_Oread>
+  <ET_Race_Naiad>Naiad</ET_Race_Naiad>
+</LanguageData>
