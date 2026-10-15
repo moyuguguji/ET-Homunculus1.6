@@ -2,7 +2,13 @@
 <Patch>
 
   <!--==============　PsychoCaramel　==============-->
-  <Operation Class="PatchOperationReplace" MayRequire="Humanoid Dryad(Continued)">
+  <!--
+    Match on packageId AND name (MayRequireAnyOf): the packageId is the stable identity
+    and survives a rename on the Workshop, while the name keeps this working for existing
+    installs. Previously only the name was matched, so any rename silently disabled this
+    compatibility patch with no error at all.
+  -->
+  <Operation Class="PatchOperationReplace" MayRequireAnyOf="moyuguguji.humanoiddryad,Humanoid Dryad(Continued)">
     <xpath>Defs/ThingDef[defName = "PsychoCaramel"]/costList</xpath>
     <value>
       <costList>
